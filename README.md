@@ -21,7 +21,7 @@
 [[RYHeadHub shareInstance] showHeadHubWithStatus:RYHeadHubShowFail andNoteText:@"数据下载失败!"]
 ```
 
-3.自定义部分
+3.自定义部分(修改不同状态下的颜色,持续时间等)
 ``` objc
 typedef NS_ENUM(NSUInteger, RYHeadHubStatus) {
     RYHeadHubShowSuccess = 0,   // 成功
