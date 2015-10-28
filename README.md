@@ -8,7 +8,7 @@
 
 1.import "RYHeadhub.h" <br>
 
-2.注意提示页面的图标是[iconfont](http://ued.taobao.org/blog/2013/09/icon-font-in-ios/). Demo带了一套iconfont.如需修改,需自己准备iconfont.<br>
+2.注意提示页面的图标是[iconfont](http://ued.taobao.org/blog/2013/09/icon-font-in-ios/  "关于iconfont") . Demo带了一套iconfont.如需修改,需自己准备iconfont.<br>
   
 3.调用方法<br>
   *[[RYHeadHub shareInstance] showHeadHubWithStatus:RYHeadHubShowSuccess andNoteText:@"数据刷新成功!"];<br>
