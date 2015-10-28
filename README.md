@@ -12,4 +12,5 @@
   
 3.调用方法<br>
 ```[[RYHeadHub shareInstance] showHeadHubWithStatus:RYHeadHubShowSuccess andNoteText:@"数据刷新成功!"];
+
 ```[[RYHeadHub shareInstance] showHeadHubWithStatus:RYHeadHubShowSuccess andNoteText:@"数据下载失败!"];
