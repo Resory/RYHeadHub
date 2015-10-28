@@ -6,10 +6,10 @@
 
 # 如何使用
 
-// 成功
-[headHub showHeadHubWithStatus:RYHeadHubShowSuccess andNoteText:@"数据刷新成功!"];
-// 失败
-[headHub showHeadHubWithStatus:RYHeadHubShowFail andNoteText:@"数据下载失败!"];
+// 成功\<br> 
+[headHub showHeadHubWithStatus:RYHeadHubShowSuccess andNoteText:@"数据刷新成功!"];\<br> 
+// 失败\<br> 
+[headHub showHeadHubWithStatus:RYHeadHubShowFail andNoteText:@"数据下载失败!"];\<br> 
 // 更多状态可自定义
 
 # 注意事项
