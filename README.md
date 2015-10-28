@@ -6,7 +6,8 @@
 
 # 如何使用
 
-1.`#import "RYHeadhub.h"` <br>
+1.引用文件<br>
+`#import "RYHeadhub.h"`
   
 2.调用方法<br>
 ``` objc
