@@ -6,7 +6,6 @@
 
 # 如何使用
 
-## 导入文件
-#import "RYHeadhub.h"
-
-
+1.import "RYHeadhub.h"
+2.注意提示页面的图标是iconfont.Demo带了一套iconfont.如需修改,需自己准备iconfont.
+3.[headHub showHeadHubWithStatus:RYHeadHubShowSuccess andNoteText:@"数据刷新成功!"];
