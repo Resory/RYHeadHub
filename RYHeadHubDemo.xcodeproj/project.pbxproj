@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030028541BDF6DEA00A9D4C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 030028531BDF6DEA00A9D4C8 /* main.m */; };
+		030028571BDF6DEA00A9D4C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 030028561BDF6DEA00A9D4C8 /* AppDelegate.m */; };
+		0300285A1BDF6DEA00A9D4C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030028591BDF6DEA00A9D4C8 /* ViewController.m */; };
+		0300285D1BDF6DEA00A9D4C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0300285B1BDF6DEA00A9D4C8 /* Main.storyboard */; };
+		030028621BDF6DEA00A9D4C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030028601BDF6DEA00A9D4C8 /* LaunchScreen.storyboard */; };
+		0300286D1BDF6DEA00A9D4C8 /* RYHeadHubDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0300286C1BDF6DEA00A9D4C8 /* RYHeadHubDemoTests.m */; };
+		030028781BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 030028771BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests.m */; };
+		03E194BE1BE06FE200BA0921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E194BD1BE06FE200BA0921 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		03E194C51BE0789E00BA0921 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03E194C01BE0789E00BA0921 /* iconfont.ttf */; settings = {ASSET_TAGS = (); }; };
+		03E194C61BE0789E00BA0921 /* RYHeadHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E194C21BE0789E00BA0921 /* RYHeadHub.m */; settings = {ASSET_TAGS = (); }; };
+		03E194C71BE0789E00BA0921 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E194C41BE0789E00BA0921 /* UIColor+Category.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		030028691BDF6DEA00A9D4C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 030028471BDF6DEA00A9D4C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0300284E1BDF6DEA00A9D4C8;
+			remoteInfo = RYHeadHubDemo;
+		};
+		030028741BDF6DEA00A9D4C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 030028471BDF6DEA00A9D4C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0300284E1BDF6DEA00A9D4C8;
+			remoteInfo = RYHeadHubDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0300284F1BDF6DEA00A9D4C8 /* RYHeadHubDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RYHeadHubDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		030028531BDF6DEA00A9D4C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		030028551BDF6DEA00A9D4C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		030028561BDF6DEA00A9D4C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		030028581BDF6DEA00A9D4C8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		030028591BDF6DEA00A9D4C8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0300285C1BDF6DEA00A9D4C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		030028611BDF6DEA00A9D4C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		030028631BDF6DEA00A9D4C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		030028681BDF6DEA00A9D4C8 /* RYHeadHubDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RYHeadHubDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0300286C1BDF6DEA00A9D4C8 /* RYHeadHubDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYHeadHubDemoTests.m; sourceTree = "<group>"; };
+		0300286E1BDF6DEA00A9D4C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		030028731BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RYHeadHubDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		030028771BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYHeadHubDemoUITests.m; sourceTree = "<group>"; };
+		030028791BDF6DEA00A9D4C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E194BD1BE06FE200BA0921 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03E194C01BE0789E00BA0921 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		03E194C11BE0789E00BA0921 /* RYHeadhub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYHeadhub.h; sourceTree = "<group>"; };
+		03E194C21BE0789E00BA0921 /* RYHeadHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYHeadHub.m; sourceTree = "<group>"; };
+		03E194C31BE0789E00BA0921 /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
+		03E194C41BE0789E00BA0921 /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0300284C1BDF6DEA00A9D4C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030028651BDF6DEA00A9D4C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030028701BDF6DEA00A9D4C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		030028461BDF6DEA00A9D4C8 = {
+			isa = PBXGroup;
+			children = (
+				03E194BF1BE0789E00BA0921 /* RYHeadHub */,
+				030028511BDF6DEA00A9D4C8 /* RYHeadHubDemo */,
+				0300286B1BDF6DEA00A9D4C8 /* RYHeadHubDemoTests */,
+				030028761BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests */,
+				030028501BDF6DEA00A9D4C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		030028501BDF6DEA00A9D4C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0300284F1BDF6DEA00A9D4C8 /* RYHeadHubDemo.app */,
+				030028681BDF6DEA00A9D4C8 /* RYHeadHubDemoTests.xctest */,
+				030028731BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		030028511BDF6DEA00A9D4C8 /* RYHeadHubDemo */ = {
+			isa = PBXGroup;
+			children = (
+				03E194BD1BE06FE200BA0921 /* Assets.xcassets */,
+				030028551BDF6DEA00A9D4C8 /* AppDelegate.h */,
+				030028561BDF6DEA00A9D4C8 /* AppDelegate.m */,
+				030028581BDF6DEA00A9D4C8 /* ViewController.h */,
+				030028591BDF6DEA00A9D4C8 /* ViewController.m */,
+				0300285B1BDF6DEA00A9D4C8 /* Main.storyboard */,
+				030028601BDF6DEA00A9D4C8 /* LaunchScreen.storyboard */,
+				030028631BDF6DEA00A9D4C8 /* Info.plist */,
+				030028521BDF6DEA00A9D4C8 /* Supporting Files */,
+			);
+			path = RYHeadHubDemo;
+			sourceTree = "<group>";
+		};
+		030028521BDF6DEA00A9D4C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				030028531BDF6DEA00A9D4C8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0300286B1BDF6DEA00A9D4C8 /* RYHeadHubDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0300286C1BDF6DEA00A9D4C8 /* RYHeadHubDemoTests.m */,
+				0300286E1BDF6DEA00A9D4C8 /* Info.plist */,
+			);
+			path = RYHeadHubDemoTests;
+			sourceTree = "<group>";
+		};
+		030028761BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				030028771BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests.m */,
+				030028791BDF6DEA00A9D4C8 /* Info.plist */,
+			);
+			path = RYHeadHubDemoUITests;
+			sourceTree = "<group>";
+		};
+		03E194BF1BE0789E00BA0921 /* RYHeadHub */ = {
+			isa = PBXGroup;
+			children = (
+				03E194C01BE0789E00BA0921 /* iconfont.ttf */,
+				03E194C11BE0789E00BA0921 /* RYHeadhub.h */,
+				03E194C21BE0789E00BA0921 /* RYHeadHub.m */,
+				03E194C31BE0789E00BA0921 /* UIColor+Category.h */,
+				03E194C41BE0789E00BA0921 /* UIColor+Category.m */,
+			);
+			path = RYHeadHub;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0300284E1BDF6DEA00A9D4C8 /* RYHeadHubDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0300287C1BDF6DEA00A9D4C8 /* Build configuration list for PBXNativeTarget "RYHeadHubDemo" */;
+			buildPhases = (
+				0300284B1BDF6DEA00A9D4C8 /* Sources */,
+				0300284C1BDF6DEA00A9D4C8 /* Frameworks */,
+				0300284D1BDF6DEA00A9D4C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RYHeadHubDemo;
+			productName = RYHeadHubDemo;
+			productReference = 0300284F1BDF6DEA00A9D4C8 /* RYHeadHubDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		030028671BDF6DEA00A9D4C8 /* RYHeadHubDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0300287F1BDF6DEA00A9D4C8 /* Build configuration list for PBXNativeTarget "RYHeadHubDemoTests" */;
+			buildPhases = (
+				030028641BDF6DEA00A9D4C8 /* Sources */,
+				030028651BDF6DEA00A9D4C8 /* Frameworks */,
+				030028661BDF6DEA00A9D4C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0300286A1BDF6DEA00A9D4C8 /* PBXTargetDependency */,
+			);
+			name = RYHeadHubDemoTests;
+			productName = RYHeadHubDemoTests;
+			productReference = 030028681BDF6DEA00A9D4C8 /* RYHeadHubDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		030028721BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 030028821BDF6DEA00A9D4C8 /* Build configuration list for PBXNativeTarget "RYHeadHubDemoUITests" */;
+			buildPhases = (
+				0300286F1BDF6DEA00A9D4C8 /* Sources */,
+				030028701BDF6DEA00A9D4C8 /* Frameworks */,
+				030028711BDF6DEA00A9D4C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				030028751BDF6DEA00A9D4C8 /* PBXTargetDependency */,
+			);
+			name = RYHeadHubDemoUITests;
+			productName = RYHeadHubDemoUITests;
+			productReference = 030028731BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		030028471BDF6DEA00A9D4C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Resory;
+				TargetAttributes = {
+					0300284E1BDF6DEA00A9D4C8 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					030028671BDF6DEA00A9D4C8 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 0300284E1BDF6DEA00A9D4C8;
+					};
+					030028721BDF6DEA00A9D4C8 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 0300284E1BDF6DEA00A9D4C8;
+					};
+				};
+			};
+			buildConfigurationList = 0300284A1BDF6DEA00A9D4C8 /* Build configuration list for PBXProject "RYHeadHubDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 030028461BDF6DEA00A9D4C8;
+			productRefGroup = 030028501BDF6DEA00A9D4C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0300284E1BDF6DEA00A9D4C8 /* RYHeadHubDemo */,
+				030028671BDF6DEA00A9D4C8 /* RYHeadHubDemoTests */,
+				030028721BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0300284D1BDF6DEA00A9D4C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E194C51BE0789E00BA0921 /* iconfont.ttf in Resources */,
+				030028621BDF6DEA00A9D4C8 /* LaunchScreen.storyboard in Resources */,
+				03E194BE1BE06FE200BA0921 /* Assets.xcassets in Resources */,
+				0300285D1BDF6DEA00A9D4C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030028661BDF6DEA00A9D4C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030028711BDF6DEA00A9D4C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0300284B1BDF6DEA00A9D4C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0300285A1BDF6DEA00A9D4C8 /* ViewController.m in Sources */,
+				030028571BDF6DEA00A9D4C8 /* AppDelegate.m in Sources */,
+				03E194C61BE0789E00BA0921 /* RYHeadHub.m in Sources */,
+				030028541BDF6DEA00A9D4C8 /* main.m in Sources */,
+				03E194C71BE0789E00BA0921 /* UIColor+Category.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030028641BDF6DEA00A9D4C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0300286D1BDF6DEA00A9D4C8 /* RYHeadHubDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0300286F1BDF6DEA00A9D4C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030028781BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0300286A1BDF6DEA00A9D4C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0300284E1BDF6DEA00A9D4C8 /* RYHeadHubDemo */;
+			targetProxy = 030028691BDF6DEA00A9D4C8 /* PBXContainerItemProxy */;
+		};
+		030028751BDF6DEA00A9D4C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0300284E1BDF6DEA00A9D4C8 /* RYHeadHubDemo */;
+			targetProxy = 030028741BDF6DEA00A9D4C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0300285B1BDF6DEA00A9D4C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0300285C1BDF6DEA00A9D4C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		030028601BDF6DEA00A9D4C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				030028611BDF6DEA00A9D4C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0300287A1BDF6DEA00A9D4C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0300287B1BDF6DEA00A9D4C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0300287D1BDF6DEA00A9D4C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RYHeadHubDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resory.RYHeadHubDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0300287E1BDF6DEA00A9D4C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RYHeadHubDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resory.RYHeadHubDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		030028801BDF6DEA00A9D4C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RYHeadHubDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resory.RYHeadHubDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RYHeadHubDemo.app/RYHeadHubDemo";
+			};
+			name = Debug;
+		};
+		030028811BDF6DEA00A9D4C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RYHeadHubDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resory.RYHeadHubDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RYHeadHubDemo.app/RYHeadHubDemo";
+			};
+			name = Release;
+		};
+		030028831BDF6DEA00A9D4C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RYHeadHubDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resory.RYHeadHubDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RYHeadHubDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		030028841BDF6DEA00A9D4C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RYHeadHubDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resory.RYHeadHubDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RYHeadHubDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0300284A1BDF6DEA00A9D4C8 /* Build configuration list for PBXProject "RYHeadHubDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0300287A1BDF6DEA00A9D4C8 /* Debug */,
+				0300287B1BDF6DEA00A9D4C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0300287C1BDF6DEA00A9D4C8 /* Build configuration list for PBXNativeTarget "RYHeadHubDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0300287D1BDF6DEA00A9D4C8 /* Debug */,
+				0300287E1BDF6DEA00A9D4C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0300287F1BDF6DEA00A9D4C8 /* Build configuration list for PBXNativeTarget "RYHeadHubDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030028801BDF6DEA00A9D4C8 /* Debug */,
+				030028811BDF6DEA00A9D4C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		030028821BDF6DEA00A9D4C8 /* Build configuration list for PBXNativeTarget "RYHeadHubDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030028831BDF6DEA00A9D4C8 /* Debug */,
+				030028841BDF6DEA00A9D4C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 030028471BDF6DEA00A9D4C8 /* Project object */;
+}
