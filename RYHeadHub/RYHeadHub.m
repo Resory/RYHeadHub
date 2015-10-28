@@ -23,7 +23,6 @@
 @property (nonatomic, strong) UILabel *noteLb;                                          // 提示文字
 @property (nonatomic, strong) UILabel *iconLb;                                          // icon字体
 
-
 @end
 
 @implementation RYHeadHub
