@@ -8,7 +8,7 @@
 
 1.import "RYHeadhub.h" <br>
 
-2.注意提示页面的图标是iconfont. Demo带了一套iconfont.如需修改,需自己准备iconfont.<br>
+2.注意提示页面的图标是`iconfont`. Demo带了一套iconfont.如需修改,需自己准备iconfont.<br>
   *关于iconfont(http://ued.taobao.org/blog/2013/09/icon-font-in-ios/)<br>
   
 3.调用方法<br>
