@@ -9,9 +9,10 @@
 #import "RYHeadHub.h"
 #import "UIColor+Category.h"
 
-#define SYS_DEVICE_WIDTH    ([[UIScreen mainScreen] bounds].size.width)                 // 屏幕宽度
-#define SYS_DEVICE_HEIGHT   ([[UIScreen mainScreen] bounds].size.height)                // 屏幕长度
-#define GLOBAL_ANIMATION_DURATION 0.35f                                                 // 提示页面-显示,隐藏-动效时间
+#define SYS_DEVICE_WIDTH    ([[UIScreen mainScreen] bounds].size.width)                  // 屏幕宽度
+#define SYS_DEVICE_HEIGHT   ([[UIScreen mainScreen] bounds].size.height)                 // 屏幕长度
+#define RGBA(R,G,B,A)  [UIColor colorWithRed:R/255.f green:G/255.f blue:B/255.f alpha:A] //RGBA
+#define GLOBAL_ANIMATION_DURATION 0.35f                                                  // 提示页面-显示,隐藏-动效时间
 
 // iconfont设置
 #define kFXIconFamilyName   @"iconfont"                                                 // icon字体
@@ -35,7 +36,6 @@
     dispatch_once(&onces, ^{
         
         headHub = [[RYHeadHub alloc] initWithFrame:CGRectMake(0, -64, SYS_DEVICE_WIDTH, 64)];
-        headHub.backgroundColor = [UIColor colorWithHexString:@"#ffd700" alpha:1.0];
         headHub.windowLevel = UIWindowLevelStatusBar;
         
         // 提示文字
@@ -52,11 +52,12 @@
         headHub.iconLb.font = [UIFont fontWithName:kFXIconFamilyName size:15.0];
         
         // 默认配置
-        headHub.rSuccessBackgroundColor = [UIColor colorWithHexString:@"#32cd32" alpha:1.0];
+        headHub.rSuccessBackgroundColor = RGBA(50, 205, 50, 1.0);
         headHub.rSucessTextColor = [UIColor whiteColor];
         headHub.rFailBackgroundColor = [UIColor redColor];
         headHub.rFailTextColor = [UIColor blackColor];
         headHub.rDurationTime = 2.0;
+        headHub.rAnimationType = RYHeadHubTranslation;
         
         [headHub addSubview:headHub.iconLb];
         [headHub addSubview:headHub.noteLb];
@@ -128,22 +129,35 @@ static bool shouldShowHeadHub = YES;
         // 设置样式
         [self configViewStyleWithStaus:status andNoteText:text];
         // 显示提示框
-        [self showNoteHub];
+        switch (self.rAnimationType) {
+            case RYHeadhubRotation:
+            {
+                [self showWithRotateAnimation];
+            }
+                break;
+            case RYHeadHubTranslation:
+            {
+                [self showWithTranslationAnimation];
+            }
+                break;
+            default:
+                break;
+        }
     }
 }
 
 
 // 显示提示框
-- (void)showNoteHub
+- (void)showWithTranslationAnimation
 {
-    __block CGRect frame = self.frame;
-    frame.origin.y = 0;
-    
+    self.frame = CGRectMake(0, -64, SYS_DEVICE_WIDTH, 64);
+    __block CGRect tFrame = self.frame;
+    tFrame.origin.y = 0;
 
     [UIView animateWithDuration:GLOBAL_ANIMATION_DURATION animations:^{
         
         // 显示
-        self.frame = frame;
+        self.frame = tFrame;
         [self makeKeyAndVisible];
         shouldShowHeadHub = NO;
         
@@ -152,13 +166,13 @@ static bool shouldShowHeadHub = YES;
         // 隐藏
         if(finished)
         {
-            frame.origin.y = -64;
+            tFrame.origin.y = -64;
             [UIView animateWithDuration:GLOBAL_ANIMATION_DURATION
                                   delay:self.rDurationTime
                                 options:UIViewAnimationOptionCurveLinear
                              animations:^{
                 
-                self.frame = frame;
+                self.frame = tFrame;
                 
             } completion:^(BOOL finished){
             
@@ -175,6 +189,51 @@ static bool shouldShowHeadHub = YES;
 {
     [self setHidden:YES];
     shouldShowHeadHub = YES;
+    self.layer.transform = CATransform3DIdentity;
+}
+
+// 其他动效
+- (void)showWithRotateAnimation
+{
+    self.frame = CGRectMake(0, 0, SYS_DEVICE_WIDTH, 64);
+    self.layer.transform = CATransform3DMakeRotation(-M_PI_2, 1, 0, 0);
+    
+    [UIView animateWithDuration:GLOBAL_ANIMATION_DURATION
+                          delay:0
+         usingSpringWithDamping:0
+          initialSpringVelocity:0
+                        options:UIViewAnimationOptionAllowUserInteraction
+                     animations:^{
+        
+        CATransform3D transform = CATransform3DIdentity;
+        self.layer.transform = transform;
+        [self makeKeyAndVisible];
+        shouldShowHeadHub = NO;
+        
+    } completion:^(BOOL finished) {
+        
+        if(finished)
+        {
+            [UIView animateWithDuration:GLOBAL_ANIMATION_DURATION
+                                  delay:self.rDurationTime
+                                options:UIViewAnimationOptionAllowUserInteraction
+                             animations:^{
+                
+                 self.layer.transform = CATransform3DMakeRotation(-M_PI_2, 1, 0, 0);
+                                 
+            } completion:^(BOOL finished) {
+                
+                if(finished)
+                {
+                    [self hideNoteHub];
+                }
+                
+            }];
+        }
+        
+    }];
+            
+    
 }
 
 

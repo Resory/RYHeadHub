@@ -30,6 +30,7 @@
 - (IBAction)successIconFontBtnAction:(id)sender
 {
     RYHeadHub *headHub = [RYHeadHub shareInstance];
+    headHub.rAnimationType = RYHeadHubTranslation;
     [headHub showHeadHubWithStatus:RYHeadHubShowSuccess andNoteText:@"数据刷新成功!"];
 }
 
@@ -37,6 +38,7 @@
 - (IBAction)failIconFontBtnAction:(id)sender
 {
     RYHeadHub *headHub = [RYHeadHub shareInstance];
+    headHub.rAnimationType = RYHeadhubRotation;
     [headHub showHeadHubWithStatus:RYHeadHubShowFail andNoteText:@"数据下载失败!"];
 }
 

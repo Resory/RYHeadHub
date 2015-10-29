@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, RYHeadHubAniamtionType) {
+    RYHeadHubTranslation,        // 平移动效
+    RYHeadhubRotation,           // 旋转动效
+};
+
 
 typedef NS_ENUM(NSUInteger, RYHeadHubStatus) {
     RYHeadHubShowSuccess = 0,   // 成功
@@ -24,6 +29,7 @@ typedef NS_ENUM(NSUInteger, RYHeadHubStatus) {
 @property (nonatomic, strong) UIColor *rFailBackgroundColor;           // 失败-背景-颜色
 
 @property (nonatomic, assign) CGFloat rDurationTime;                   // 提示页面-出现-持续时间
+@property (nonatomic, assign) RYHeadHubAniamtionType rAnimationType;   // 提示页面-动效-默认为RYHeadHubTranslationY
 
 /**
  *  单例
