@@ -7,12 +7,11 @@
 //
 
 #import "RYHeadHub.h"
-#import "UIColor+Category.h"
 
 #define SYS_DEVICE_WIDTH    ([[UIScreen mainScreen] bounds].size.width)                  // 屏幕宽度
 #define SYS_DEVICE_HEIGHT   ([[UIScreen mainScreen] bounds].size.height)                 // 屏幕长度
 #define RGBA(R,G,B,A)  [UIColor colorWithRed:R/255.f green:G/255.f blue:B/255.f alpha:A] //RGBA
-#define GLOBAL_ANIMATION_DURATION 0.35f                                                  // 提示页面-显示,隐藏-动效时间
+#define GLOBAL_ANIMATION_DURATION 0.5f                                                  // 提示页面-显示,隐藏-动效时间
 
 // iconfont设置
 #define kFXIconFamilyName   @"iconfont"                                                 // icon字体
@@ -200,7 +199,7 @@ static bool shouldShowHeadHub = YES;
     
     [UIView animateWithDuration:GLOBAL_ANIMATION_DURATION
                           delay:0
-         usingSpringWithDamping:0
+         usingSpringWithDamping:0.9
           initialSpringVelocity:0
                         options:UIViewAnimationOptionAllowUserInteraction
                      animations:^{
