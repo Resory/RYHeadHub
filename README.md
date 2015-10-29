@@ -21,8 +21,14 @@
 [[RYHeadHub shareInstance] showHeadHubWithStatus:RYHeadHubShowFail andNoteText:@"数据下载失败!"]
 ```
 
-3.自定义部分(修改不同状态下的颜色,持续时间等)
+3.自定义部分(修改不同状态下的颜色,动效,动效持续时间等)
 ``` objc
+typedef NS_ENUM(NSUInteger, RYHeadHubAniamtionType) {
+    RYHeadHubTranslation,        // 平移动效
+    RYHeadhubRotation,           // 旋转动效
+};
+
+
 typedef NS_ENUM(NSUInteger, RYHeadHubStatus) {
     RYHeadHubShowSuccess = 0,   // 成功
     RYHeadHubShowFail    = 1,   // 失败
@@ -38,6 +44,7 @@ typedef NS_ENUM(NSUInteger, RYHeadHubStatus) {
 @property (nonatomic, strong) UIColor *rFailBackgroundColor;           // 失败-背景-颜色
 
 @property (nonatomic, assign) CGFloat rDurationTime;                   // 提示页面-出现-持续时间
+@property (nonatomic, assign) RYHeadHubAniamtionType rAnimationType;   // 提示页面-动效-默认为RYHeadHubTranslationY
 
 ```
 
