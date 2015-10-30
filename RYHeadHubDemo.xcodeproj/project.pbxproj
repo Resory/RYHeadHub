@@ -14,10 +14,9 @@
 		030028621BDF6DEA00A9D4C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030028601BDF6DEA00A9D4C8 /* LaunchScreen.storyboard */; };
 		0300286D1BDF6DEA00A9D4C8 /* RYHeadHubDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0300286C1BDF6DEA00A9D4C8 /* RYHeadHubDemoTests.m */; };
 		030028781BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 030028771BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests.m */; };
+		03BC89D71BE3546000164197 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03BC89D61BE3546000164197 /* iconfont.ttf */; settings = {ASSET_TAGS = (); }; };
 		03E194BE1BE06FE200BA0921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E194BD1BE06FE200BA0921 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
-		03E194C51BE0789E00BA0921 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03E194C01BE0789E00BA0921 /* iconfont.ttf */; settings = {ASSET_TAGS = (); }; };
 		03E194C61BE0789E00BA0921 /* RYHeadHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E194C21BE0789E00BA0921 /* RYHeadHub.m */; settings = {ASSET_TAGS = (); }; };
-		03E194C71BE0789E00BA0921 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E194C41BE0789E00BA0921 /* UIColor+Category.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,12 +52,10 @@
 		030028731BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RYHeadHubDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		030028771BDF6DEA00A9D4C8 /* RYHeadHubDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYHeadHubDemoUITests.m; sourceTree = "<group>"; };
 		030028791BDF6DEA00A9D4C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BC89D61BE3546000164197 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		03E194BD1BE06FE200BA0921 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		03E194C01BE0789E00BA0921 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		03E194C11BE0789E00BA0921 /* RYHeadhub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYHeadhub.h; sourceTree = "<group>"; };
 		03E194C21BE0789E00BA0921 /* RYHeadHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYHeadHub.m; sourceTree = "<group>"; };
-		03E194C31BE0789E00BA0921 /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
-		03E194C41BE0789E00BA0921 /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,11 +149,9 @@
 		03E194BF1BE0789E00BA0921 /* RYHeadHub */ = {
 			isa = PBXGroup;
 			children = (
-				03E194C01BE0789E00BA0921 /* iconfont.ttf */,
+				03BC89D61BE3546000164197 /* iconfont.ttf */,
 				03E194C11BE0789E00BA0921 /* RYHeadhub.h */,
 				03E194C21BE0789E00BA0921 /* RYHeadHub.m */,
-				03E194C31BE0789E00BA0921 /* UIColor+Category.h */,
-				03E194C41BE0789E00BA0921 /* UIColor+Category.m */,
 			);
 			path = RYHeadHub;
 			sourceTree = "<group>";
@@ -264,7 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03E194C51BE0789E00BA0921 /* iconfont.ttf in Resources */,
+				03BC89D71BE3546000164197 /* iconfont.ttf in Resources */,
 				030028621BDF6DEA00A9D4C8 /* LaunchScreen.storyboard in Resources */,
 				03E194BE1BE06FE200BA0921 /* Assets.xcassets in Resources */,
 				0300285D1BDF6DEA00A9D4C8 /* Main.storyboard in Resources */,
@@ -296,7 +291,6 @@
 				030028571BDF6DEA00A9D4C8 /* AppDelegate.m in Sources */,
 				03E194C61BE0789E00BA0921 /* RYHeadHub.m in Sources */,
 				030028541BDF6DEA00A9D4C8 /* main.m in Sources */,
-				03E194C71BE0789E00BA0921 /* UIColor+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
