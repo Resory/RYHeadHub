@@ -146,7 +146,7 @@ static bool shouldShowHeadHub = YES;
 }
 
 
-// 显示提示框
+// 平移动效
 - (void)showWithTranslationAnimation
 {
     self.frame = CGRectMake(0, -64, SYS_DEVICE_WIDTH, 64);
@@ -183,15 +183,7 @@ static bool shouldShowHeadHub = YES;
     }];
 }
 
-// 隐藏提示框
-- (void)hideNoteHub
-{
-    [self setHidden:YES];
-    shouldShowHeadHub = YES;
-    self.layer.transform = CATransform3DIdentity;
-}
-
-// 其他动效
+// 旋转动效
 - (void)showWithRotateAnimation
 {
     self.frame = CGRectMake(0, 0, SYS_DEVICE_WIDTH, 64);
@@ -233,6 +225,14 @@ static bool shouldShowHeadHub = YES;
     }];
             
     
+}
+
+// 隐藏提示框
+- (void)hideNoteHub
+{
+    [self setHidden:YES];
+    shouldShowHeadHub = YES;
+    self.layer.transform = CATransform3DIdentity;
 }
 
 
